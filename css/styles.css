@@ -1,0 +1,2630 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h5, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: #FAFAFA;
+  margin: 0 auto;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+.checkout__body {
+  background: #F1F1F1;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.button {
+  min-height: 48px;
+  padding: 15px 29.5px 15px 31.5px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+  display: inline-block;
+}
+
+.back {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.5;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.back:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.footer__content-social, .footer__content-text, .footer__content-bottom, .footer__content-wrapper, .like__inner, .images__inner-twopics, .images__inner, .features__box-component, .features__box-filling, .features__box, .features__pattern, .features__inner, .technic__content-amount, .technic__content-add, .technic__imgwrapper, .technic__inner, .best__wrapper, .earphones__wrapper, .products__wrapper, .navigation, .order__block-content .total, .order__block-content .info__top, .order__block-content, .summary__prices-price, .summary__item-imgwrapper, .info__payment-wrapper section label.radiobutton, .info__payment-wrapper section, .info__payment-wrapper, .form__summary-button, .form__summary-prices, .form__summary-item, .form__summary-items, .form__info-payment, .form__info-shipping, .form__info-billing, .checkout__form-info .form__info-wrapper, .checkout__form, .header .otherpage, .header .cart__element-check, .header .cart__element-total, .header .cart__element-amount, .header .cart__element-wrapper, .header .cart__element-item, .header .cart__element-products, .header .cart__element-top, .header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__content-textsmall, .footer__content-textbig, .features__box-text, .features__box-number, .features__pattern-textone, .features__pattern-textwo, .technic__content-text, .best__wrapper-text, .premiumspeaker__wrapper-text, .order__block-content .total__heading, .order__block-text, .summary__prices-name, .summary__item-quant, .summary__item-name, .header .cart__element-titletotal, .header .cart__element-price, .header .cart__element-name, .header__info-text {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.best__wrapper-heading, .name, .premiumspeaker__wrapper-heading, .header__info h1 {
+  color: #fff;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.technic__content-heading, .header__info .header__info-title {
+  color: #000;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.technic__content-title, .header__info-product {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.header {
+  background: #141414;
+  position: relative;
+}
+.header .container {
+  background-image: url(../images/headphones.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -43px;
+}
+.header .no-picture {
+  background-image: none;
+}
+.header__wrapper {
+  padding: 32px 0px 37px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header__wrapper a {
+  line-height: 0;
+}
+.header__basket {
+  line-height: 0;
+}
+.header__basket svg path {
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.header__basket svg:hover path {
+  fill: #D87D4A;
+}
+.header__info {
+  padding: 128px 0 158px;
+  color: #fff;
+}
+.header__info-content {
+  max-width: 398px;
+  max-height: 346px;
+}
+.header__info-product {
+  opacity: 0.5;
+  margin-bottom: 24px;
+}
+.header__info h1 {
+  margin-bottom: 24px;
+}
+.header__info .header__info-title {
+  color: #fff;
+  margin-bottom: 0;
+}
+.header__info-text {
+  margin-bottom: 40px;
+}
+.header__dropdown {
+  display: none;
+  width: 16px;
+  height: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
+  display: none;
+  padding: 0;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.header__dropdown::before {
+  content: " ";
+  position: absolute;
+  width: inherit;
+  height: 3px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.header__dropdown:hover {
+  border-color: #D87D4A;
+}
+.header__dropdown:hover::before {
+  background-color: #D87D4A;
+}
+.header .cart {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 95px;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+.header .cart__element {
+  position: absolute;
+  top: 32px;
+  right: 165px;
+  width: 377px;
+  height: 488px;
+  border-radius: 8px;
+  background: #FFF;
+  padding: 31px;
+}
+.header .cart__element-heading {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}
+.header .cart__element-remove {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  line-height: 25px;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.header .cart__element-remove:hover {
+  color: #D87D4A;
+  border-bottom: 1px solid #D87D4A;
+  opacity: 1;
+}
+.header .cart__element-products {
+  padding: 31px 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.header .cart__element-item {
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+.header .cart__element-wrapper {
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: #F1F1F1;
+  border-radius: 8px;
+}
+.header .cart__element-product {
+  height: 40px;
+}
+.header .cart__element-name {
+  color: #000;
+  font-weight: 700;
+  opacity: 1;
+}
+.header .cart__element-price {
+  color: #000;
+  font-size: 14px;
+}
+.header .cart__element-amount {
+  margin-left: auto;
+  width: 96px;
+  height: 32px;
+  background-color: #F1F1F1;
+  justify-content: space-around;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.header .cart__element-quant {
+  opacity: 0.25;
+  line-height: normal;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.header .cart__element-quant:hover {
+  color: #D87D4A;
+  opacity: 1;
+}
+.header .cart__element-total {
+  padding-bottom: 24px;
+}
+.header .cart__element-titletotal {
+  opacity: 0.5;
+  color: #000;
+  text-transform: uppercase;
+}
+.header .cart__element-pricetotal {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.header .cart__element-check {
+  line-height: 18px;
+  width: 100%;
+  justify-content: center;
+}
+.header section.opened {
+  display: block;
+}
+.header .products__wrapper-headphones {
+  display: none;
+}
+.header .blur {
+  display: none;
+}
+.header .shop {
+  display: none;
+}
+.header .products__wrapper-speakers {
+  display: none;
+}
+.header .products__wrapper-earphones {
+  display: none;
+}
+.header .otherpage {
+  padding: 98px 0;
+  justify-content: center;
+}
+
+.checkout {
+  padding-top: 79px;
+  padding-bottom: 141px;
+}
+.checkout .back:hover {
+  border: 0;
+  color: #D87D4A;
+  opacity: 1;
+}
+.checkout__form {
+  padding-top: 38px;
+  align-items: flex-start;
+  width: 100%;
+}
+.checkout__form-info {
+  max-width: 730px;
+  min-height: 1126px;
+  background-color: #fff;
+  padding: 58px 48px 48px;
+  border-radius: 8px;
+  width: 100%;
+}
+.checkout__form-info label {
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: -0.214px;
+  color: #000;
+}
+.checkout__form-info .form__info-wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 9px;
+  max-width: 309px;
+  width: 100%;
+}
+.checkout__form-summary {
+  max-width: 350px;
+  width: 100%;
+  min-height: 612px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 32px 33px;
+}
+
+.form__info-heading {
+  color: #000;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.143px;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+.form__info-billing {
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 24px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  margin-bottom: 53px;
+}
+.form__info-title {
+  color: #D87D4A;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.929px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.form__info-shipping {
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 24px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  margin-bottom: 61px;
+}
+.form__info-shipping .info__shipping-input {
+  width: 100%;
+}
+.form__info-shipping .big__input-wrapper {
+  max-width: 634px;
+  width: 100%;
+}
+.form__info-payment {
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 24px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.form__info-input {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: transparent;
+  outline: none;
+  padding: 18px 24px;
+  color: #000;
+  font-family: "Manrope";
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+  font-weight: 700;
+  caret-color: #D87D4A;
+}
+.form__info-input::-moz-placeholder {
+  color: #000;
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  opacity: 0.400000006;
+}
+.form__info-input::placeholder {
+  color: #000;
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  opacity: 0.400000006;
+}
+.form__info-input:focus {
+  border: 1px solid #D87D4A;
+}
+.form__summary-heading {
+  color: #000;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}
+.form__summary-items {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px 0;
+}
+.form__summary-item {
+  justify-content: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+.form__summary-prices {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding-bottom: 32px;
+}
+.form__summary-button {
+  justify-content: center;
+  width: 100%;
+}
+
+.info__payment-wrapper {
+  -moz-column-gap: 229px;
+       column-gap: 229px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.info__payment-wrapper section {
+  row-gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 309px;
+  width: 100%;
+}
+.info__payment-wrapper section label.radiobutton {
+  cursor: pointer;
+  justify-content: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid #CFCFCF;
+  background: #fff;
+  padding: 18px 16px 17px;
+  width: 100%;
+  height: 56px;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.info__payment-wrapper section label.radiobutton input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  outline: none;
+  border: 1px solid #CFCFCF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.info__payment-wrapper section label.radiobutton input:checked {
+  background-image: url(../images/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 0;
+}
+
+.summary__item-imgwrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #F1F1F1;
+  align-items: center;
+  justify-content: center;
+}
+.summary__item-imgwrapper img {
+  height: 40px;
+}
+.summary__item-name {
+  font-weight: 700;
+  color: #000;
+  opacity: 1;
+}
+.summary__item-price {
+  opacity: 0.5;
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+}
+.summary__item-quant {
+  opacity: 0.5;
+  color: #000;
+  font-weight: 700;
+  margin-left: auto;
+}
+.summary__prices-price {
+  width: 100%;
+}
+.summary__prices-name {
+  opacity: 0.5;
+  color: #000;
+  text-transform: uppercase;
+}
+.summary__prices-pricetag {
+  margin-bottom: 0;
+  letter-spacing: normal;
+}
+
+.order {
+  display: none;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 150vh;
+  z-index: 10;
+}
+.order__block {
+  max-width: 540px;
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  top: 125px;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  padding: 48px;
+}
+.order__block-check {
+  margin-bottom: 33px;
+}
+.order__block-heading {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.143px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.order__block-text {
+  color: #000;
+  opacity: 0.5;
+  margin-bottom: 33px;
+}
+.order__block-content {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  background: #F1F1F1;
+  margin-bottom: 46px;
+}
+.order__block-content .info {
+  width: 246px;
+  height: inherit;
+  padding: 24px;
+}
+.order__block-content .info__top {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.order__block-content .info__top-img {
+  height: 50px;
+  width: 50px;
+  padding: 9px 11px;
+}
+.order__block-content .info__top-text .title {
+  color: #000;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: normal;
+}
+.order__block-content .info__top-text .price {
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.order__block-content .info__top-quant {
+  margin-left: auto;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.order__block-content .info__addiotional {
+  text-align: center;
+  padding-top: 12px;
+  color: #000;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.214px;
+  opacity: 0.5;
+}
+.order__block-content .total {
+  width: 198px;
+  height: inherit;
+  background-color: #000;
+  border-radius: 0px 8px 8px 0px;
+  color: #fff;
+  padding: 41px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.order__block-content .total__heading {
+  text-transform: uppercase;
+}
+.order__block-content .total__price {
+  font-size: 18px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.clicked {
+  display: block;
+}
+
+.grand-total {
+  margin-top: 16px;
+}
+
+.orange-text {
+  color: #D87D4A;
+}
+
+.orange {
+  color: #fff;
+  background-color: #D87D4A;
+}
+.orange:hover {
+  background-color: #FBAF85;
+}
+
+.navigation {
+  justify-content: center;
+  gap: 34px;
+  padding-right: 120px;
+}
+.navigation-link {
+  color: #fff;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.navigation-link:hover {
+  color: #D87D4A;
+}
+
+.products {
+  padding: 200px 0 120px;
+}
+.products__wrapper-item {
+  max-width: 350px;
+  width: 100%;
+  max-height: 204px;
+  background: #F1F1F1;
+  border-radius: 8px;
+  position: relative;
+  padding: 116px 109px 30px;
+  text-align: center;
+}
+.products__wrapper-item img:first-child {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.products__wrapper-blur {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.products__wrapper-category {
+  font-size: 18px;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 15px;
+}
+.products__wrapper-shop {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-right: 18px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+  font-weight: 700;
+}
+.products__wrapper-shop::after {
+  content: " ";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  background-image: url(../images/arrow.svg);
+  right: 0px;
+  top: 3px;
+}
+.products__wrapper-shop:hover {
+  color: #D87D4A;
+}
+
+.products__padding-low {
+  padding-bottom: 0;
+  padding-top: 240px;
+}
+
+.premiumspeaker {
+  padding: 48px 0;
+}
+.premiumspeaker__wrapper {
+  min-height: 560px;
+  background: #D87D4A;
+  border-radius: 8px;
+  padding: 133px 95px 124px;
+  background-image: url(../images/circles.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.premiumspeaker__wrapper-content {
+  max-width: 349px;
+  margin-left: auto;
+}
+.premiumspeaker__wrapper-image {
+  background-image: url(../images/biggersp.png);
+  width: 410px;
+  height: 464px;
+  position: absolute;
+  left: 117px;
+  bottom: 0;
+}
+.premiumspeaker__wrapper-heading {
+  margin-bottom: 24px;
+}
+.premiumspeaker__wrapper-text {
+  margin-bottom: 40px;
+}
+.premiumspeaker__wrapper .black {
+  background-color: #000;
+  color: #fff;
+}
+.premiumspeaker__wrapper .black:hover {
+  background-color: #4C4C4C;
+}
+
+.speaker__content {
+  border-radius: 8px;
+  background-image: url(../images/bg-speaker.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  padding: 101px 0 101px 95px;
+}
+
+.name {
+  font-size: 28px;
+  line-height: normal;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.transparent {
+  height: 47px;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+}
+.transparent:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.earphones {
+  padding-top: 48px;
+}
+.earphones__wrapper-img {
+  max-width: 540px;
+  width: 100%;
+  height: 320px;
+  background-image: url(../images/earphones.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.earphones__wrapper-content {
+  max-width: 540px;
+  width: 100%;
+  max-height: 320px;
+  background: #F1F1F1;
+  border-radius: 8px;
+  padding: 101px 0 101px 95px;
+}
+
+.best {
+  padding: 200px 0;
+}
+.best__wrapper-content {
+  max-width: 445px;
+}
+.best__wrapper-heading {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  color: #000;
+  margin-bottom: 32px;
+}
+.best__wrapper-heading span {
+  color: #D87D4A;
+}
+.best__wrapper-text {
+  color: #000;
+}
+.best__wrapper-image {
+  max-width: 540px;
+  width: 100%;
+  height: 588px;
+  background-image: url(../images/man.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.best__padding-low {
+  padding: 160px 0;
+}
+
+.technic {
+  padding-top: 160px;
+}
+.technic .inner-product {
+  padding-top: 56px;
+}
+.technic__imgwrapper {
+  width: 540px;
+  height: 560px;
+  background-color: #F1F1F1;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 65px;
+  position: relative;
+}
+.technic__imgwrapper-blur {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+}
+.technic__imgwrapper:last-child {
+  padding-top: 83px;
+}
+.technic .zx9-imgwrapper {
+  padding-top: 101px;
+}
+.technic .padd__top-131 {
+  padding-top: 131px;
+}
+.technic .otherbloc {
+  padding-top: 131px;
+}
+.technic .earphone {
+  width: 296px;
+}
+.technic__content {
+  max-width: 445px;
+}
+.technic__content-title {
+  color: #D87D4A;
+  margin-bottom: 16px;
+}
+.technic__content-heading {
+  margin-bottom: 32px;
+}
+.technic__content-text {
+  margin-bottom: 40px;
+  color: #000;
+}
+.technic__content-price {
+  font-size: 18px;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 47px;
+}
+.technic__content-add {
+  justify-content: flex-start;
+  gap: 16px;
+}
+.technic__content-amount {
+  width: 120px;
+  height: 48px;
+  background-color: #F1F1F1;
+  justify-content: space-around;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.technic__content-quant {
+  color: #000;
+  opacity: 0.25;
+}
+.technic__content-quant:hover {
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+  color: #D87D4A;
+  opacity: 1;
+}
+
+.technic__product {
+  padding-top: 79px;
+}
+
+.features {
+  padding: 160px 0;
+}
+.features__inner {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 125px;
+}
+.features__pattern {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  max-width: 635px;
+}
+.features__pattern-textone, .features__pattern-textwo {
+  color: #000;
+}
+.features__box {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.features__box-filling {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.features__box-component {
+  justify-content: flex-start;
+  gap: 24px;
+}
+.features__box-number {
+  color: #D87D4A;
+  opacity: 1;
+  font-weight: 700;
+}
+.features__box-text {
+  color: #000;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.143px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.images {
+  padding-bottom: 160px;
+}
+.images__inner-twopics {
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  max-width: 445px;
+  width: 100%;
+}
+.images__inner-pic {
+  width: 100%;
+  height: 280px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.images__inner .head__product-1 {
+  background-image: url(../images/head.png);
+}
+.images__inner-bigpic {
+  max-width: 635px;
+  width: 100%;
+  height: 592px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.images__inner .man {
+  background-image: url(../images/man-head.png);
+}
+.images__inner .mobile {
+  background-image: url(../images/headphones-and-tel.png);
+}
+.images__inner .microphone__headphone {
+  background-image: url(../images/xx99-1-img1-desc.png);
+}
+.images__inner .watch__headphone {
+  background-image: url(../images/xx99-1-img2-desc.png);
+}
+.images__inner .winter__hedphone {
+  background-image: url(../images/xx99-1-img3-desc.png);
+}
+.images__inner .girl__headphone {
+  background-image: url(../images/xx59-img1-desc.png);
+}
+.images__inner .book__headphone {
+  background-image: url(../images/xx59-img2-desc.png);
+}
+.images__inner .hand__hedphone {
+  background-image: url(../images/xx59-img3-desc.png);
+}
+.images__inner .big__speaker {
+  background-image: url(../images/zx9-img1-desc.png);
+}
+.images__inner .garden__speaker {
+  background-image: url(../images/zx9-img2-desc.png);
+}
+.images__inner .two__speaker {
+  background-image: url(../images/zx9-img3-desc.png);
+}
+.images__inner .zx7-big__speaker {
+  background-image: url(../images/zx7-img1-desc.png);
+}
+.images__inner .man__speaker {
+  background-image: url(../images/zx7-img2-desc.png);
+}
+.images__inner .table__speaker {
+  background-image: url(../images/zx7-img3-desc.png);
+}
+.images__inner .two__earphones {
+  background-image: url(../images/yx1-img1-desc.png);
+}
+.images__inner .charge__earphones {
+  background-image: url(../images/yx1-img2-desc.png);
+}
+.images__inner .box__earphones {
+  background-image: url(../images/yx1-img3-desc.png);
+}
+
+.like {
+  text-align: center;
+}
+.like .title {
+  margin-bottom: 64px;
+}
+.like__inner-product {
+  width: 350px;
+}
+.like__inner-imgwrapper {
+  max-width: 350px;
+  height: 318px;
+  border-radius: 8px;
+  background: #F1F1F1;
+  position: relative;
+  margin-bottom: 40px;
+}
+.like__inner-image {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+.like__inner-heading {
+  font-size: 24px;
+  letter-spacing: 1.714px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 32px;
+}
+.like .xx99 {
+  width: 148.305px;
+  height: 193px;
+}
+.like .xx59 {
+  width: 190.806px;
+  height: 199px;
+}
+.like .zx9 {
+  width: 143.124px;
+  height: 172px;
+}
+.like .xx99-11 {
+  width: 175.524px;
+  height: 194px;
+}
+.like .zx7 {
+  width: 132.967px;
+  height: 191px;
+}
+
+.footer {
+  background: #101010;
+}
+.footer__content {
+  padding: 75px 0 48px;
+  position: relative;
+}
+.footer__content-orangeline {
+  width: 101px;
+  height: 4px;
+  background: #D87D4A;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer__content-wrapper {
+  margin-bottom: 36px;
+}
+.footer__content-wrapper a:first-child {
+  line-height: 0;
+}
+.footer__content .navigation {
+  padding-right: 0;
+}
+.footer__content-text {
+  max-width: 540px;
+  gap: 56px;
+}
+.footer__content-textsmall {
+  font-weight: 700;
+}
+.footer__content-social {
+  gap: 16px;
+}
+.footer__content-social a {
+  line-height: 0;
+}
+.footer__content-social a svg path {
+  transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+}
+.footer__content-social a svg:hover path {
+  fill: #D87D4A;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    max-width: 1000px;
+  }
+  .products {
+    padding: 200px 0 120px;
+  }
+  .products__wrapper-item {
+    max-width: 300px;
+    padding: 116px 82px 30px;
+  }
+  .products__padding-low {
+    padding-bottom: 0;
+    padding-top: 240px;
+  }
+  .premiumspeaker__wrapper {
+    padding: 133px 50px 124px;
+    background-image: url(../images/circles.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left -21px bottom 0;
+  }
+  .premiumspeaker__wrapper-image {
+    left: 91px;
+    bottom: 0;
+  }
+  .speaker__content {
+    padding: 101px 0 101px 83px;
+  }
+  .earphones__wrapper-img {
+    max-width: 470px;
+    height: 278px;
+    background-image: url(../images/earphones.png);
+  }
+  .earphones__wrapper-content {
+    max-width: 470px;
+    max-height: 278px;
+    padding: 80px 0 80px 83px;
+  }
+  .best {
+    padding: 150px 0;
+  }
+  .best__wrapper-image {
+    max-width: 470px;
+    height: 512px;
+  }
+  .best__padding-low {
+    padding: 160px 0;
+  }
+  .technic .inner-product {
+    padding-top: 56px;
+  }
+  .technic__imgwrapper {
+    width: 470px;
+    height: 500px;
+    padding-top: 50px;
+  }
+  .technic__imgwrapper-blur {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+  }
+  .technic__imgwrapper:last-child {
+    padding-top: 50px;
+  }
+  .features__inner {
+    gap: 87px;
+  }
+  .features__pattern {
+    gap: 32px;
+  }
+  .images__inner-twopics {
+    max-width: 380px;
+  }
+  .images__inner-pic {
+    height: 240px;
+  }
+  .images__inner-bigpic {
+    max-width: 550px;
+    height: 512px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .like__inner-product {
+    width: 300px;
+  }
+  .like__inner-imgwrapper {
+    max-width: 300px;
+  }
+  .checkout {
+    padding-top: 79px;
+    padding-bottom: 141px;
+  }
+  .checkout .container {
+    max-width: 730px;
+  }
+  .checkout__form {
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .checkout__form-info .form__info-wrapper {
+    max-width: 299px;
+  }
+  .checkout__form-summary {
+    max-width: 730px;
+  }
+  .form__info-shipping .info__shipping-input {
+    width: 100%;
+  }
+  .form__info-shipping .big__input-wrapper {
+    max-width: 634px;
+    width: 100%;
+  }
+  .info__payment-wrapper {
+    -moz-column-gap: 209px;
+         column-gap: 209px;
+  }
+}
+@media (max-width: 980px) {
+  .container {
+    max-width: 920px;
+  }
+  .header .container {
+    background-position: center center;
+  }
+  .header .navigation {
+    padding-right: 75px;
+  }
+  .header__info {
+    padding: 128px 0 158px;
+  }
+  .header__info-content {
+    max-width: 398px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .products {
+    padding-bottom: 90px;
+  }
+  .products__wrapper-item {
+    max-width: 290px;
+    padding: 116px 78px 30px;
+  }
+  .products__padding-low {
+    padding-bottom: 0;
+    padding-top: 240px;
+  }
+  .premiumspeaker__wrapper {
+    padding: 133px 24px 124px;
+    background-image: url(../images/circles.png);
+    background-position: left -65px bottom 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .premiumspeaker__wrapper-image {
+    left: 45px;
+    bottom: 0;
+  }
+  .earphones__wrapper-img {
+    max-width: 440px;
+    height: 261px;
+    background-image: url(../images/earphones.png);
+  }
+  .earphones__wrapper-content {
+    max-width: 440px;
+    max-height: 261px;
+    padding: 72px 0 71.5px 60px;
+  }
+  .best {
+    padding: 150px 0;
+  }
+  .best__wrapper-image {
+    max-width: 450px;
+    height: 489px;
+  }
+  .best__wrapper-content {
+    max-width: 420px;
+  }
+  .best__padding-low {
+    padding: 160px 0;
+  }
+  .technic .inner-product {
+    padding-top: 56px;
+  }
+  .technic__imgwrapper {
+    width: 425px;
+    height: 425px;
+    padding-top: 72px;
+  }
+  .technic__imgwrapper-image {
+    height: 265px;
+  }
+  .technic__imgwrapper:last-child {
+    padding-top: 60px;
+  }
+  .technic__content {
+    max-width: 400px;
+  }
+  .technic .zx9-imgwrapper {
+    padding-top: 69px;
+  }
+  .technic .padd__top-131 {
+    padding-top: 69px;
+  }
+  .technic .otherbloc {
+    padding-top: 69px;
+  }
+  .technic .earphone {
+    width: 260px;
+  }
+  .features__inner {
+    gap: 87px;
+  }
+  .features__pattern {
+    gap: 32px;
+    max-width: 550px;
+  }
+  .images__inner-twopics {
+    max-width: 341px;
+    gap: 62px;
+  }
+  .images__inner-pic {
+    height: 215px;
+  }
+  .images__inner-bigpic {
+    max-width: 527px;
+    height: 492px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .like__inner-product {
+    width: 286px;
+  }
+  .like__inner-imgwrapper {
+    max-width: 286px;
+  }
+}
+@media (max-width: 855px) {
+  .container {
+    max-width: 770px;
+  }
+  .products {
+    padding: 148px 0 48px;
+  }
+  .products__wrapper {
+    gap: 10px;
+  }
+  .products__wrapper-item {
+    max-width: 241px;
+    height: 165px;
+    padding: 88px 54px 22px 58px;
+  }
+  .products__wrapper-headphones {
+    width: 80px;
+    height: 104px;
+  }
+  .products__wrapper-speakers {
+    width: 84px;
+    height: 101px;
+  }
+  .products__wrapper-earphones {
+    width: 103px;
+    height: 104px;
+  }
+  .products__wrapper-blur {
+    top: -4px;
+  }
+  .products__wrapper-category {
+    font-size: 15px;
+    letter-spacing: 1.071px;
+  }
+  .products__wrapper-shop::after {
+    background-image: url(../images/arrow-tablet.svg);
+  }
+  .products__padding-low {
+    padding: 172px 0 0;
+  }
+  .premiumspeaker {
+    padding: 48px 0 32px;
+  }
+  .premiumspeaker__wrapper {
+    text-align: center;
+    max-height: 720px;
+    padding: 52px 210px 64px;
+    background-image: url(../images/circles-tablet.png);
+    background-position: left 0 top 0;
+  }
+  .premiumspeaker__wrapper-content {
+    margin-left: 0;
+  }
+  .premiumspeaker__wrapper-image {
+    background-image: url(../images/speaker-t.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 197.212px;
+    height: 237px;
+    position: static;
+    margin: 0 auto 64px;
+  }
+  .speaker__content {
+    background-image: url(../images/bg-speaker-tablet.png);
+    height: 320px;
+    padding: 101px 0 101px 62px;
+  }
+  .earphones {
+    padding-top: 32px;
+  }
+  .earphones__wrapper-img {
+    background-image: url(../images/earphones-tablet.png);
+    max-width: 339px;
+    height: 320px;
+  }
+  .earphones__wrapper-content {
+    max-width: 400px;
+    max-height: 320px;
+    padding: 101px 0 101px 41px;
+  }
+  .best {
+    padding: 96px 0;
+  }
+  .best__wrapper {
+    justify-content: center;
+    gap: 63px;
+    flex-direction: column-reverse;
+  }
+  .best__wrapper-content {
+    max-width: 573px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .best__wrapper-image {
+    max-width: 689px;
+    height: 300px;
+    background-image: url(../images/man-tablet.png);
+    margin: 0 auto;
+  }
+  .best__padding-low {
+    padding: 120px 0;
+  }
+  .technic {
+    padding-top: 120px;
+  }
+  .technic__inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 52px;
+  }
+  .technic .inner-product {
+    flex-direction: row;
+    gap: 130px;
+    padding-top: 24px;
+  }
+  .technic__imgwrapper {
+    width: 100%;
+    height: 352px;
+    padding-top: 41px;
+    order: -1;
+  }
+  .technic__imgwrapper-image {
+    height: 225px;
+  }
+  .technic__imgwrapper .product-image {
+    height: 200px;
+  }
+  .technic__imgwrapper-blur {
+    bottom: 7px;
+  }
+  .technic__imgwrapper:last-child {
+    padding-top: 41px;
+  }
+  .technic .imgwrapper-product {
+    width: 281px;
+    height: 480px;
+    padding-top: 133px;
+  }
+  .technic .imgwrapper-product .technic__imgwrapper-blur {
+    width: 255px;
+    bottom: 90px;
+  }
+  .technic .imgwrapper-padd-141 {
+    padding-top: 141px;
+  }
+  .technic .otherbloc {
+    padding-top: 40px;
+  }
+  .technic .earphone {
+    width: 242px;
+    height: 243px;
+  }
+  .technic__content {
+    max-width: 572px;
+    text-align: center;
+  }
+  .technic__content-text {
+    margin-bottom: 24px;
+  }
+  .technic .content__product {
+    max-width: 339px;
+    text-align: left;
+  }
+  .technic .content__product .technic__content-title {
+    font-size: 12px;
+  }
+  .technic .content__product h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .technic__product {
+    padding-top: 33px;
+  }
+  .features {
+    padding: 120px 0;
+  }
+  .features__inner {
+    gap: 120px;
+  }
+  .features__box {
+    flex-direction: row;
+    gap: 165px;
+  }
+  .images {
+    padding-bottom: 120px;
+  }
+  .images__inner-twopics {
+    max-width: 277px;
+    gap: 60px;
+  }
+  .images__inner-pic {
+    height: 174px;
+  }
+  .images__inner .head__product-1 {
+    background-image: url(../images/head.png);
+  }
+  .images__inner-bigpic {
+    max-width: 437px;
+    height: 407px;
+  }
+  .like .title {
+    margin-bottom: 56px;
+  }
+  .like__inner-product {
+    width: 223px;
+  }
+  .like__inner-imgwrapper {
+    max-width: 223px;
+  }
+  .checkout {
+    padding-top: 48px;
+    padding-bottom: 116px;
+  }
+  .checkout__form {
+    padding-top: 24px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+  }
+  .checkout__form-info {
+    min-height: 1084px;
+  }
+  .order {
+    top: 88px;
+  }
+  .order__block {
+    top: 132px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 709px;
+  }
+  .header {
+    background-color: #101010;
+    position: relative;
+  }
+  .header .container {
+    background-image: url(../images/head-tablet.png);
+    background-position: bottom 0 center;
+  }
+  .header .no-picture {
+    background-image: none;
+  }
+  .header__wrapper {
+    gap: 32px;
+    padding: 32px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .header__basket {
+    margin-left: auto;
+  }
+  .header .cart {
+    top: 89px;
+  }
+  .header .cart__element {
+    right: 40px;
+  }
+  .header nav {
+    display: none;
+  }
+  .header__dropdown {
+    display: block;
+  }
+  .header nav.header__open.active {
+    transform: translateY(0%);
+  }
+  .header nav.header__open {
+    transform: translateY(-200%);
+    display: block;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    position: absolute;
+    left: 0;
+    top: 90px;
+    height: 200vh;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.5s;
+  }
+  .header nav.header__open ul {
+    padding-top: 108px;
+    width: 100%;
+    min-height: 340px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 0;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    gap: 10px;
+  }
+  .header nav.header__open ul li {
+    width: 223px;
+    height: 165px;
+    border-radius: 8px;
+    background: #F1F1F1;
+    padding-top: 88px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header nav.header__open ul li:first-child {
+    display: none;
+  }
+  .header nav.header__open ul li a:nth-child(3) {
+    font-size: 15px;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: normal;
+  }
+  .header nav.header__open ul li img:first-child {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header nav.header__open ul li .products__wrapper-headphones {
+    display: block;
+  }
+  .header nav.header__open ul li .blur {
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header nav.header__open ul li .shop {
+    display: inline-block;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-right: 18px;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.28, 0.12, 0.25, 0.9);
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  .header nav.header__open ul li .shop::after {
+    content: " ";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-image: url(../images/arrow.svg);
+    right: 0px;
+    top: 4px;
+  }
+  .header nav.header__open ul li .shop:hover {
+    color: #D87D4A;
+  }
+  .header nav.header__open ul li .products__wrapper-speakers {
+    display: block;
+  }
+  .header nav.header__open ul li .products__wrapper-earphones {
+    display: block;
+  }
+  .header__info {
+    padding: 126px 0 167px;
+    text-align: center;
+  }
+  .header__info-content {
+    max-width: 396px;
+    margin: 0 auto;
+  }
+  .header__info-text {
+    max-width: 349px;
+    margin: 0 auto 40px;
+  }
+  .products__wrapper-item {
+    max-width: 223px;
+  }
+  .products__padding-low {
+    padding: 172px 0 0;
+  }
+  .premiumspeaker {
+    padding: 48px 0 32px;
+  }
+  .premiumspeaker__wrapper {
+    padding: 52px 170px 64px;
+  }
+  .earphones__wrapper-content {
+    max-width: 339px;
+  }
+  .best__wrapper-image {
+    max-width: 689px;
+    height: 300px;
+  }
+  .best__padding-low {
+    padding: 120px 0;
+  }
+  .technic .inner-product {
+    flex-direction: row;
+    gap: 69px;
+    padding-top: 24px;
+  }
+  .images__inner-twopics {
+    gap: 20px;
+  }
+  .images__inner .head__product-1 {
+    background-image: url(../images/head-tab.png);
+  }
+  .images__inner-bigpic {
+    max-width: 395px;
+    height: 368px;
+  }
+  .checkout {
+    max-width: 709px;
+    margin: 0 auto;
+  }
+  .checkout__form-info {
+    padding: 30px 27px;
+  }
+  .footer {
+    background: #101010;
+  }
+  .footer__content {
+    padding: 60px 0 46px;
+  }
+  .footer__content-wrapper {
+    margin-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: flex-start;
+  }
+  .footer__content .navigation {
+    max-width: 435px;
+    padding-right: 0;
+  }
+  .footer__content-bottom {
+    align-items: flex-end;
+  }
+  .footer__content-text {
+    max-width: 689px;
+  }
+  .footer__content .footer__content-textbig {
+    max-width: 689px;
+  }
+  .footer__content .footer__content-social {
+    position: absolute;
+    right: 0;
+  }
+}
+@media (max-width: 730px) {
+  .container {
+    max-width: 675px;
+  }
+  .header nav.header__open ul {
+    gap: 25px;
+  }
+  .header nav.header__open ul li {
+    width: 200px;
+  }
+  .products__wrapper-item {
+    max-width: 200px;
+    padding: 88px 44px 22px 44px;
+  }
+  .products__wrapper-blur {
+    width: 165px;
+    top: 0;
+  }
+  .earphones__wrapper-img {
+    background-image: url(../images/earphones-tablet.png);
+    max-width: 300px;
+    height: 283px;
+  }
+  .earphones__wrapper-content {
+    max-width: 320px;
+    max-height: 283px;
+    padding: 80px 0 84px 41px;
+  }
+  .best__wrapper-image {
+    max-width: 655px;
+    height: 285px;
+  }
+  .technic .content__product {
+    max-width: 300px;
+    text-align: left;
+  }
+  .images__inner-twopics {
+    gap: 20px;
+    max-width: 258px;
+  }
+  .images__inner-pic {
+    height: 163px;
+  }
+  .images__inner-bigpic {
+    max-width: 370px;
+    height: 346px;
+  }
+  .like .title {
+    margin-bottom: 56px;
+  }
+  .like__inner-product {
+    width: 200px;
+  }
+  .like__inner-imgwrapper {
+    max-width: 200px;
+  }
+  .checkout {
+    max-width: 675px;
+    margin: 0 auto;
+  }
+  .checkout .container {
+    max-width: 675px;
+  }
+  .checkout__form-info {
+    max-width: 675px;
+  }
+  .checkout__form-info .form__info-wrapper {
+    max-width: 292px;
+  }
+  .checkout__form-summary {
+    max-width: 675px;
+  }
+  .form__info-shipping .info__shipping-input {
+    width: 100%;
+  }
+  .form__info-shipping .big__input-wrapper {
+    max-width: 601px;
+    width: 100%;
+  }
+  .info__payment-wrapper {
+    -moz-column-gap: 196px;
+         column-gap: 196px;
+  }
+}
+@media (max-width: 691px) {
+  .container {
+    max-width: 630px;
+  }
+  .header nav.header__open ul {
+    gap: 25px;
+    min-height: 800px;
+    padding-top: 100px;
+  }
+  .header nav.header__open ul li {
+    max-width: 510px;
+    width: 100%;
+  }
+  .header nav.header__open ul li .blur {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 165px;
+  }
+  .products__wrapper {
+    gap: 68px;
+    justify-content: center;
+  }
+  .products__wrapper-item {
+    max-width: 610px;
+    padding: 88px 34px 22px 34px;
+  }
+  .products__wrapper-blur {
+    width: 165px;
+    top: 0;
+  }
+  .premiumspeaker__wrapper-heading {
+    font-size: 44px;
+    line-height: 46px;
+  }
+  .earphones__wrapper {
+    gap: 32px;
+  }
+  .earphones__wrapper-img {
+    background-image: url(../images/earphones.png);
+    max-width: 610px;
+    height: 362px;
+  }
+  .earphones__wrapper-content {
+    max-width: 610px;
+    max-height: 362px;
+    padding: 121px 0 121px 56px;
+  }
+  .best__wrapper-image {
+    max-width: 610px;
+    height: 266px;
+  }
+  .technic__content-add {
+    justify-content: center;
+    gap: 20px;
+  }
+  .technic .content__product {
+    max-width: 500px;
+    text-align: center;
+  }
+  .technic .imgwrapper-product {
+    width: 100%;
+    height: 337px;
+    padding-top: 52px;
+  }
+  .technic .imgwrapper-product .technic__imgwrapper-blur {
+    bottom: 24px;
+  }
+  .images__inner {
+    justify-content: center;
+    gap: 32px;
+  }
+  .images__inner-twopics {
+    gap: 20px;
+    max-width: 445px;
+  }
+  .images__inner-pic {
+    height: 280px;
+  }
+  .images__inner-bigpic {
+    max-width: 445px;
+    height: 415px;
+  }
+  .features__inner {
+    justify-content: center;
+  }
+  .features__pattern {
+    text-align: center;
+    max-width: 600px;
+  }
+  .features__pattern .title {
+    align-self: center;
+  }
+  .like .title {
+    margin-bottom: 56px;
+  }
+  .like__inner {
+    gap: 32px;
+  }
+  .like__inner-product {
+    width: 100%;
+  }
+  .like__inner-imgwrapper {
+    max-width: inherit;
+  }
+  .checkout .container {
+    max-width: 630px;
+  }
+  .checkout__form-info .form__info-wrapper {
+    max-width: 269px;
+  }
+  .info__payment-wrapper {
+    -moz-column-gap: 190px;
+         column-gap: 190px;
+  }
+  .info__payment-wrapper section {
+    max-width: 269px;
+    width: 100%;
+  }
+  .form__info-shipping .info__shipping-input {
+    width: 100%;
+  }
+  .form__info-shipping .big__input-wrapper {
+    max-width: 556px;
+    width: 100%;
+  }
+}
+@media (max-width: 645px) {
+  .container {
+    max-width: 600px;
+  }
+  .checkout .container {
+    max-width: 600px;
+  }
+  .checkout__form-info .form__info-wrapper {
+    max-width: 250px;
+  }
+  .info__payment-wrapper {
+    -moz-column-gap: 180px;
+         column-gap: 180px;
+  }
+  .info__payment-wrapper section {
+    max-width: 250px;
+    width: 100%;
+  }
+  .form__info-shipping .info__shipping-input {
+    width: 100%;
+  }
+  .form__info-shipping .big__input-wrapper {
+    max-width: 518px;
+    width: 100%;
+  }
+}
+@media (max-width: 605px) {
+  .container {
+    max-width: 560px;
+  }
+  .header nav.header__open ul li {
+    max-width: 390px;
+  }
+  .premiumspeaker__wrapper {
+    padding: 52px 90px 64px;
+  }
+  .premiumspeaker__wrapper-content {
+    max-width: 361px;
+  }
+  .premiumspeaker__wrapper-heading {
+    font-size: 44px;
+    line-height: 46px;
+  }
+  .earphones__wrapper {
+    gap: 32px;
+  }
+  .earphones__wrapper-img {
+    background-image: url(../images/earphones.png);
+    max-width: 540px;
+    height: 320px;
+  }
+  .earphones__wrapper-content {
+    max-width: 540px;
+    max-height: 320px;
+    padding: 101px 0 101px 56px;
+  }
+  .technic .content__product {
+    max-width: 400px;
+  }
+  .best__wrapper-image {
+    max-width: 540px;
+    height: 235px;
+  }
+  .features__pattern {
+    max-width: 500px;
+  }
+  .features__box {
+    gap: 125px;
+  }
+  .checkout .container {
+    max-width: 560px;
+  }
+  .checkout__form-info .form__info-wrapper {
+    max-width: 486px;
+  }
+  .info__payment-wrapper {
+    -moz-column-gap: 190px;
+         column-gap: 190px;
+    row-gap: 24px;
+  }
+  .info__payment-wrapper section {
+    max-width: 486px;
+    width: 100%;
+  }
+  .form__info-shipping .info__shipping-input {
+    width: 100%;
+  }
+  .form__info-shipping .big__input-wrapper {
+    max-width: 486px;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .earphones__wrapper-img {
+    height: 275px;
+  }
+  .earphones__wrapper-content {
+    max-height: 275px;
+    padding: 75px 0 80px 56px;
+  }
+  .best__wrapper-image {
+    max-width: 452px;
+    height: 197px;
+  }
+  .order {
+    top: 88px;
+  }
+  .order__block {
+    max-width: 327px;
+    top: 135px;
+    padding: 32px;
+  }
+  .order__block-check {
+    margin-bottom: 23px;
+  }
+  .order__block-heading {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.857px;
+    margin-bottom: 16px;
+  }
+  .order__block-text {
+    margin-bottom: 24px;
+  }
+  .order__block-content {
+    width: 100%;
+    height: 232px;
+    margin-bottom: 23px;
+  }
+  .order__block-content .info {
+    width: inherit;
+    height: 140px;
+  }
+  .order__block-content .total {
+    width: inherit;
+    height: 92px;
+    border-radius: 0px 0px 8px 8px;
+    padding: 15px 24px 19px;
+  }
+  .footer__content {
+    padding: 52px 0 38px;
+    text-align: center;
+  }
+  .footer__content-wrapper {
+    margin-bottom: 48px;
+    align-items: center;
+    gap: 42px;
+  }
+  .footer__content-orangeline {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer__content .navigation {
+    max-width: 327px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer__content-bottom {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .footer__content-text {
+    gap: 48px;
+    max-width: 360px;
+  }
+  .footer__content-textbig {
+    max-width: 360px;
+  }
+  .footer__content-textsmall {
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer__content .footer__content-social {
+    position: static;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 347px;
+  }
+  .header {
+    background-image: url(../images/head-mobile.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+  .header .container {
+    background-image: none;
+  }
+  .header__wrapper {
+    gap: 69px;
+    padding: 31px 0px;
+  }
+  .header__basket {
+    margin-left: 0;
+  }
+  .header .cart {
+    top: 88px;
+  }
+  .header .cart__element {
+    right: 24px;
+    width: 327px;
+    height: 488px;
+    padding: 31px 28px;
+  }
+  .header nav {
+    display: none;
+  }
+  .header__dropdown {
+    display: block;
+  }
+  .header nav.header__open {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    top: 88px;
+  }
+  .header nav.header__open ul {
+    padding-top: 84px;
+    min-height: 750px;
+  }
+  .header nav.header__open ul li {
+    width: 327px;
+  }
+  .header nav.header__open ul li .blur {
+    top: -10px;
+  }
+  .header__info {
+    padding: 102px 0 109px;
+    text-align: center;
+  }
+  .header__info-content {
+    max-width: 327px;
+  }
+  .header__info-text {
+    max-width: 328px;
+    margin: 0 auto 27px;
+  }
+  .header__info-product {
+    margin-bottom: 16px;
+  }
+  .header__info h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .header__info .header__info-title {
+    font-size: 28px;
+    line-height: normal;
+  }
+  .header .otherpage {
+    padding: 32px 0;
+  }
+  .no-picture {
+    background-image: none;
+  }
+  .products {
+    padding: 96px 0 72px;
+  }
+  .products__wrapper {
+    gap: 68px;
+    justify-content: center;
+  }
+  .products__wrapper-item {
+    max-width: 327px;
+    padding: 88px 108px 22px;
+  }
+  .products__wrapper-blur {
+    top: -10px;
+  }
+  .products__padding-low {
+    padding: 172px 0 0;
+  }
+  .premiumspeaker {
+    padding: 48px 0 24px;
+  }
+  .premiumspeaker__wrapper {
+    max-height: 600px;
+    padding: 55px 24px;
+    background-image: url(../images/circles-mobile.png);
+    background-position: left 0 top 0;
+  }
+  .premiumspeaker__wrapper-content {
+    margin-left: 0;
+  }
+  .premiumspeaker__wrapper-image {
+    width: 172px;
+    height: 207px;
+    position: static;
+    margin: 0 auto 32px;
+  }
+  .premiumspeaker__wrapper-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .premiumspeaker__wrapper-text {
+    margin-bottom: 24px;
+  }
+  .speaker__content {
+    background-image: url(../images/bg-speaker-mobile.png);
+    padding: 101px 0 101px 24px;
+  }
+  .earphones {
+    padding-top: 24px;
+  }
+  .earphones__wrapper {
+    justify-content: center;
+    gap: 24px;
+  }
+  .earphones__wrapper-img {
+    background-image: url(../images/earphones-mobile.png);
+    height: 200px;
+    max-width: 327px;
+  }
+  .earphones__wrapper-content {
+    max-width: 327px;
+    padding: 41px 0 41px 24px;
+  }
+  .best {
+    padding: 120px 0;
+  }
+  .best__wrapper {
+    gap: 40px;
+  }
+  .best__wrapper-content {
+    max-width: 327px;
+  }
+  .best__wrapper-image {
+    background-image: url(../images/man-mobile.png);
+    height: 300px;
+  }
+  .best__wrapper-heading {
+    font-size: 28px;
+  }
+  .technic {
+    padding-top: 120px;
+  }
+  .technic:nth-child(1) {
+    padding-top: 64px;
+  }
+  .technic__inner {
+    gap: 32px;
+  }
+  .technic .inner-product {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .technic__content-text {
+    margin-bottom: 24px;
+  }
+  .technic__content-heading {
+    font-size: 28px;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+  .technic__content-price {
+    margin-bottom: 31px;
+  }
+  .technic__content-add {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .technic .imgwrapper-product {
+    width: 100%;
+    height: 352px;
+    padding-top: 56px;
+  }
+  .technic .imgwrapper-product .technic__imgwrapper-blur {
+    width: 100%;
+    bottom: 27px;
+  }
+  .technic .content__product {
+    max-width: 327px;
+    text-align: left;
+  }
+  .technic .content__product .technic__content-title {
+    font-size: 14px;
+  }
+  .technic .content__product h3 {
+    line-height: normal;
+  }
+  .technic__product:nth-child(1) {
+    padding-top: 16px;
+  }
+  .features {
+    padding: 88px 0;
+  }
+  .features__inner {
+    gap: 88px;
+    justify-content: flex-start;
+  }
+  .features__box {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .features__pattern {
+    gap: 24px;
+    text-align: left;
+  }
+  .features .title {
+    font-size: 24px;
+    align-self: flex-start;
+  }
+  .images__inner {
+    gap: 20px;
+  }
+  .images__inner-twopics {
+    max-width: 327px;
+  }
+  .images__inner-pic {
+    height: 174px;
+  }
+  .images__inner-bigpic {
+    max-width: 327px;
+    background-size: cover;
+  }
+  .images__inner .man {
+    background-image: url(../images/man-tab.png);
+  }
+  .images__inner .mobile {
+    background-image: url(../images/headphones-and-tel-mob.png);
+  }
+  .images__inner .microphone__headphone {
+    background-image: url(../images/xx99-1-img1-mob.png);
+  }
+  .images__inner .watch__headphone {
+    background-image: url(../images/xx99-1-img2-mob.png);
+  }
+  .images__inner .winter__hedphone {
+    background-image: url(../images/xx99-1-img3-mob.png);
+  }
+  .images__inner .girl__headphone {
+    background-image: url(../images/xx59-img1-mob.png);
+  }
+  .images__inner .book__headphone {
+    background-image: url(../images/xx59-img2-mob.png);
+  }
+  .images__inner .hand__hedphone {
+    background-image: url(../images/xx59-img3-mob.png);
+  }
+  .images__inner .big__speaker {
+    background-image: url(../images/zx9-img1-mob.png);
+  }
+  .images__inner .garden__speaker {
+    background-image: url(../images/zx9-img2-mob.png);
+  }
+  .images__inner .two__speaker {
+    background-image: url(../images/zx9-img3-mob.png);
+  }
+  .images__inner .zx7-big__speaker {
+    background-image: url(../images/zx7-img1-mob.png);
+  }
+  .images__inner .man__speaker {
+    background-image: url(../images/zx7-img2-mob.png);
+  }
+  .images__inner .table__speaker {
+    background-image: url(../images/zx7-img3-mob.png);
+  }
+  .images__inner .two__earphones {
+    background-image: url(../images/yx1-img1-mob.png);
+  }
+  .images__inner .charge__earphones {
+    background-image: url(../images/yx1-img2-mob.png);
+  }
+  .images__inner .box__earphones {
+    background-image: url(../images/yx1-img3-mob.png);
+  }
+  .like .title {
+    margin-bottom: 40px;
+  }
+  .like__inner {
+    justify-content: center;
+    gap: 56px;
+  }
+  .like__inner-product {
+    width: 327px;
+  }
+  .like__inner-imgwrapper {
+    max-width: 327px;
+    height: 120px;
+  }
+  .like .xx99 {
+    width: 73px;
+    height: 95px;
+  }
+  .like .xx59 {
+    width: 79px;
+    height: 83px;
+  }
+  .like .zx9 {
+    width: 71px;
+    height: 86px;
+  }
+  .like .xx99-11 {
+    width: 86.857px;
+    height: 96px;
+  }
+  .like .zx7 {
+    width: 60.566px;
+    height: 87px;
+  }
+  .checkout {
+    padding-top: 16px;
+    padding-bottom: 97px;
+  }
+  .checkout .container {
+    max-width: 327px;
+  }
+  .checkout__form-info {
+    max-width: 327px;
+    min-height: 1378px;
+    padding: 27px 24px 31px 23px;
+  }
+  .checkout__form-info .form__info-wrapper {
+    max-width: 280px;
+  }
+  .checkout__form-summary {
+    max-width: 327px;
+    padding: 32px 24px;
+  }
+  .form__info-heading {
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+  }
+  .form__info-billing {
+    margin-bottom: 32px;
+  }
+  .form__info-shipping {
+    margin-bottom: 32px;
+  }
+  .form__info-shipping .big__input-wrapper {
+    max-width: 327px;
+    width: 100%;
+  }
+  .form__summary-button {
+    width: 100%;
+  }
+  .info__payment-title {
+    margin-bottom: 17px;
+  }
+  .footer__content-text {
+    gap: 48px;
+  }
+  .footer__content-textbig {
+    max-width: 327px;
+  }
+}/*# sourceMappingURL=styles.css.map */
