@@ -1646,7 +1646,11 @@
             }
             &-bigpic {
                 max-width: 327px;
+                height: 368px;
                 background-size: cover;
+            }
+            .head__product-1 {
+                background-image: url(../images/headphones-mob.png);
             }
             .man{
                 background-image: url(../images/man-tab.png);
