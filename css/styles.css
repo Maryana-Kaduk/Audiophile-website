@@ -2493,7 +2493,11 @@ body {
   }
   .images__inner-bigpic {
     max-width: 327px;
-    background-size: cover;
+    height: 368px;
+    background-size: contain;
+  }
+  .images__inner .head__product-1 {
+    background-image: url(../images/headphones-mob.png);
   }
   .images__inner .man {
     background-image: url(../images/man-tab.png);
